@@ -1,0 +1,1 @@
+pub const NATIVE_TOKEN_PRECISION: u8 = 6;
