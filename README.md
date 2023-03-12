@@ -1,99 +1,81 @@
-# CosmWasm Starter Pack
+<!--
+parent:
+  order: false
+-->
 
-This is a template to build smart contracts in Rust to run inside a
-[Cosmos SDK](https://github.com/cosmos/cosmos-sdk) module on all chains that enable it.
-To understand the framework better, please read the overview in the
-[cosmwasm repo](https://github.com/CosmWasm/cosmwasm/blob/master/README.md),
-and dig into the [cosmwasm docs](https://www.cosmwasm.com).
-This assumes you understand the theory and just want to get coding.
+<h1 align="center">OLLO CosmWasm Contracts</h1>
 
-## Creating a new repo from template
+<p align="center">
+<img src="assets/olloeclipse.jpg" style="border-radius: 15px; box-shadow: 0px 0px 10px rgba(0,0,0,0.25);"/>
+</p>
 
-Assuming you have a recent version of Rust and Cargo installed
-(via [rustup](https://rustup.rs/)),
-then the following should get you a new repo to start a contract:
+<br/>
 
-Install [cargo-generate](https://github.com/ashleygwilliams/cargo-generate) and cargo-run-script.
-Unless you did that before, run this line now:
+<div align="center">
 
-```sh
-cargo install cargo-generate --features vendored-openssl
-cargo install cargo-run-script
-```
+[![Project Status: Active -- The project has reached a stable, usable
+state and is being actively
+developed.](https://img.shields.io/badge/repo%20status-Active-green.svg?style=flat-square)](https://www.repostatus.org/#active)
+[![License](https://img.shields.io/github/license/ollo-station/ollo.svg?style=flat-square)](https://github.com/OLLO-Station/ollo)
+[![Version](https://img.shields.io/github/tag/OllO-Station/ollo.svg?style=flat-square)](https://github.com/OllO-Station/ollo/releases/latest)
+[![Discord](https://badgen.net/badge/icon/discord?icon=discord&label)](https://discord.gg/euGcGgdq7M)
+[![Twitter](https://img.shields.io/twitter/follow/ollostation.svg?label=@OLLOStation)](https://twitter.com/intent/follow?screen_name=OLLOStation)
 
-Now, use it to create your new contract.
-Go to the folder in which you want to place it and run:
+</div>
+<br/>
+<div align="center">
+<img src="./assets/logolblue.png" height="50" align="center"/>
+</div>
 
-**Latest**
+## Intro 🤝
 
-```sh
-cargo generate --git https://github.com/CosmWasm/cw-template.git --name PROJECT_NAME
-```
+### Contracts
 
-For cloning minimal code repo:
+<br/>
+<div align="center">
+<img src="./assets/logolblue.png" height="50" align="center"/>
+</div>
 
-```sh
-cargo generate --git https://github.com/CosmWasm/cw-template.git --name PROJECT_NAME -d minimal=true
-```
+## Getting Started ⚡
 
-**Older Version**
+<br/>
 
-Pass version as branch flag:
+<div align="center">
+<img src="./assets/logolblue.png" height="50" align="center"/>
+</div>
 
-```sh
-cargo generate --git https://github.com/CosmWasm/cw-template.git --branch <version> --name PROJECT_NAME
-```
+## Resources 👥
 
-Example:
 
-```sh
-cargo generate --git https://github.com/CosmWasm/cw-template.git --branch 0.16 --name PROJECT_NAME
-```
+<br/>
+<div align="center">
+<img src="./assets/logolblue.png" height="50" align="center"/>
+</div>
 
-You will now have a new folder called `PROJECT_NAME` (I hope you changed that to something else)
-containing a simple working contract and build system that you can customize.
 
-## Create a Repo
+## Links 🌐
 
-After generating, you have a initialized local git repo, but no commits, and no remote.
-Go to a server (eg. github) and create a new upstream repo (called `YOUR-GIT-URL` below).
-Then run the following:
 
-```sh
-# this is needed to create a valid Cargo.lock file (see below)
-cargo check
-git branch -M main
-git add .
-git commit -m 'Initial Commit'
-git remote add origin YOUR-GIT-URL
-git push -u origin main
-```
+<br/>
 
-## CI Support
+<div align="center">
+<img src="./assets/logolblue.png" height="50" align="center"/>
+</div>
 
-We have template configurations for both [GitHub Actions](.github/workflows/Basic.yml)
-and [Circle CI](.circleci/config.yml) in the generated project, so you can
-get up and running with CI right away.
+## Contact Us 💬
 
-One note is that the CI runs all `cargo` commands
-with `--locked` to ensure it uses the exact same versions as you have locally. This also means
-you must have an up-to-date `Cargo.lock` file, which is not auto-generated.
-The first time you set up the project (or after adding any dep), you should ensure the
-`Cargo.lock` file is updated, so the CI will test properly. This can be done simply by
-running `cargo check` or `cargo unit-test`.
+You can get ahold of the team through several channels:
 
-## Using your project
+- Reach out to us on our [Twitter](https://twitter.com/ollostation)
+- Visit our [Discord](https://discord.gg/euGcGgdq7M)
+- Send us an [email](hi@station8.zone)
+- **We're hiring!** Get in touch with our team through [email](jobs@station8.zone) or through our Discord if you're interested!
 
-Once you have your custom repo, you should check out [Developing](./Developing.md) to explain
-more on how to run tests and develop code. Or go through the
-[online tutorial](https://docs.cosmwasm.com/) to get a better feel
-of how to develop.
+We'd love to hear from you!
 
-[Publishing](./Publishing.md) contains useful information on how to publish your contract
-to the world, once you are ready to deploy it on a running blockchain. And
-[Importing](./Importing.md) contains information about pulling in other contracts or crates
-that have been published.
+> **NOTE**: For security-related issues, please read over the [SECURITY.md](https://github.com/ollo-station/ollo/tree/master/SECURITY.md) file and contact us directly.
 
-Please replace this README file with information about your specific project. You can keep
-the `Developing.md` and `Publishing.md` files as useful referenced, but please set some
-proper description in the README.
+<br/>
+<br/>
+
+<img src="assets/blueplanet.jpg" style="border-radius: 15px; box-shadow: 0px 0px 10px rgba(0,0,0,0.25);"/>
